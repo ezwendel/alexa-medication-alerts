@@ -1,19 +1,21 @@
 module.exports = {
-    medReminder: function (currentDateTime, newDateTime, freqStr, userTimeZone, medication) {
+    medReminder: function (currentDateTime, newDateTime, freqStr, userTimeZone, medication, msgSSML) {
         return { requestTime : currentDateTime.format('YYYY-MM-DDTHH:mm:ss'),
             trigger: {
                 type : 'SCHEDULED_ABSOLUTE',
                 scheduledTime : newDateTime.format('YYYY-MM-DDTHH:mm:ss'),
                 timeZoneId : userTimeZone,
-                recurrence : {                        
-                    recurrenceRules : [ freqStr ]
+                recurrence : {
+                    startDateTime: newDateTime.format('YYYY-MM-DDTHH:mm:ss'),
+                    recurrenceRules : freqStr
                     }
                },
             alertInfo: {
                 spokenInfo: {
                     content: [{
                         locale: "en-US", 
-                        text: `It's time to take ${medication}.`,  
+                        text: `It's time to take ${medication}. Please notify me when you've taken your ${medication}.`,
+                        ssml: msgSSML
                     }]
                 }
             },
@@ -42,12 +44,54 @@ module.exports = {
       }
       if (m*1===0) {
         minutes = ""
-      } else if (m*1<10) {
-        minutes = m*1
       } else {
         minutes = m;
       }
-      var spTime = hours + " " + minutes + " " + ap;
+      console.log("minutes", minutes);
+      var spTime = hours + ":" + minutes + " " + ap;
       return spTime;
+    },
+    dowConversion: function (dow) {
+        if (dow === 'Monday' || dow === 'monday' || dow === 1) {
+            return { string : "MO",
+                num : 1, 
+                full : "Monday",
+            }
+        } else if (dow === 'Tuesday' || dow === 'tuesday' || dow === 2) {
+            return { string : "TU",
+                num : 2, 
+                full : "Tuesday",
+            }
+        } else if (dow === 'Wednesday' || dow === 'wednesday' || dow === 3) {
+            return { string : "WE",
+                num : 3, 
+                full : "Wednesday",
+            }
+        } else if (dow === 'Thursday' || dow === 'thursday' || dow === 4) {
+            return { string : "TH",
+                num : 4, 
+                full : "Thursday",
+            }
+        } else if (dow === 'Friday' || dow === 'friday' || dow === 5) {
+            return { string : "FR",
+                num : 5, 
+                full : "Friday",
+            }
+        } else if (dow === 'Saturday' || dow === 'saturday' || dow === 6) {
+            return { string : "SA",
+                num : 6, 
+                full : "Saturday",
+            }
+        } else if (dow === 'Sunday' || dow === 'sunday' || dow === 0) {
+            return { string : "SU",
+                num : 0, 
+                full : "Sunday",
+            }
+        } else {
+            return { string : "DA", 
+                num : 7,
+                full : "Daily"
+            }
+        }
     }
 }

@@ -5,15 +5,22 @@
       "intents": [
         {
           "name": "AMAZON.CancelIntent",
-          "samples": []
+          "samples": [
+            "cancel"
+          ]
         },
         {
           "name": "AMAZON.HelpIntent",
-          "samples": []
+          "samples": [
+            "help me",
+            "help"
+          ]
         },
         {
           "name": "AMAZON.StopIntent",
-          "samples": []
+          "samples": [
+            "stop"
+          ]
         },
         {
           "name": "AMAZON.NavigateHomeIntent",
@@ -33,6 +40,9 @@
               "name": "time",
               "type": "AMAZON.TIME",
               "samples": [
+                "{weekday} at {time}",
+                "{time} {weekday}",
+                "{time} on {weekday}",
                 "{time}"
               ]
             },
@@ -45,6 +55,52 @@
             }
           ],
           "samples": [
+            "please add a {weekday} reminder for {medication} at {time}",
+            "please add a reminder for {medication} on {weekday} at {time}",
+            "please add {medication}",
+            "please add",
+            "please add {medication} at {time}",
+            "please add {medication} at {time} on {weekday}",
+            "please add {medication} at {time} {weekday}",
+            "please add {medication} {weekday} at {time}",
+            "please add {medication} on {weekday} at {time}",
+            "please add {medication} {weekday} {time}",
+            "please {medication} at {time}",
+            "please {medication} at {time} on {weekday}",
+            "please {medication} at {time} {weekday}",
+            "please {medication} {weekday} at {time}",
+            "please {medication} on {weekday} at {time}",
+            "please {medication} {weekday} {time}",
+            "please record that I take {medication} on {weekday} at {time}",
+            "please record that I take {medication} {weekday} at {time}",
+            "please record {medication} on {weekday} at {time}",
+            "please record {medication} {weekday} at {time}",
+            "add a {weekday} reminder for {medication} at {time} please",
+            "add a reminder for {medication} on {weekday} at {time} please",
+            "add {medication} please",
+            "add please",
+            "add {medication} at {time} please",
+            "add {medication} at {time} on {weekday} please",
+            "add {medication} at {time} {weekday} please",
+            "add {medication} {weekday} at {time} please",
+            "add {medication} on {weekday} at {time} please",
+            "add {medication} {weekday} {time} please",
+            "{medication} at {time} please",
+            "{medication} at {time} on {weekday} please",
+            "{medication} at {time} {weekday} please",
+            "{medication} {weekday} at {time} please",
+            "{medication} on {weekday} at {time} please",
+            "{medication} {weekday} {time} please",
+            "add a {weekday} reminder for {medication} at {time}",
+            "add a reminder for {medication} on {weekday} at {time}",
+            "add {medication}",
+            "add",
+            "add {medication} at {time}",
+            "add {medication} at {time} on {weekday}",
+            "add {medication} at {time} {weekday}",
+            "add {medication} {weekday} at {time}",
+            "add {medication} on {weekday} at {time}",
+            "add {medication} {weekday} {time}",
             "{medication} at {time}",
             "{medication} at {time} on {weekday}",
             "{medication} at {time} {weekday}",
@@ -75,6 +131,250 @@
             }
           ],
           "samples": [
+            "please delete my {weekday} {medication} notification",
+            "please remove my {weekday} {medication} notification",
+            "please take out my {weekday} {medication} notification",
+            "please delete my {weekday} {medication} alert",
+            "please remove my {weekday} {medication} alert",
+            "please take out my {weekday} {medication} alert",
+            "please delete my {weekday} {medication} alarm",
+            "please remove my {weekday} {medication} alarm",
+            "please take out my {weekday} {medication} alarm",
+            "please delete my {weekday} {time} {medication} notification",
+            "please remove my {weekday} {time} {medication} notification",
+            "please take out my {weekday} {time} {medication} notification",
+            "please delete my {weekday} {time} {medication} alert",
+            "please remove my {weekday} {time} {medication} alert",
+            "please take out my {weekday} {time} {medication} alert",
+            "please delete my {weekday} {time} {medication} alarm",
+            "please remove my {weekday} {time} {medication} alarm",
+            "please take out my {weekday} {time} {medication} alarm",
+            "please delete my notification for {medication} on {weekday}",
+            "please remove my notification for {medication} on {weekday}",
+            "please take out my notification for {medication} on {weekday}",
+            "please delete my alert for {medication} on {weekday}",
+            "please remove my alert for {medication} on {weekday}",
+            "please take out my alert for {medication} on {weekday}",
+            "please delete my alarm for {medication} on {weekday}",
+            "please remove my alarm for {medication} on {weekday}",
+            "please take out my alarm for {medication} on {weekday}",
+            "please delete my notification for {medication} on {weekday} at {time}",
+            "please remove my notification for {medication} on {weekday} at {time}",
+            "please take out my notification for {medication} on {weekday} at {time}",
+            "please delete my alert for {medication} on {weekday} at {time}",
+            "please remove my alert for {medication} on {weekday} at {time}",
+            "please take out my alert for {medication} on {weekday} at {time}",
+            "please delete my alarm for {medication} on {weekday} at {time}",
+            "please remove my alarm for {medication} on {weekday} at {time}",
+            "please take out my alarm for {medication} on {weekday} at {time}",
+            "please delete the medication alert for {time} {medication}",
+            "please remove the medication alert for {time} {medication}",
+            "please take out the medication alert for {time} {medication}",
+            "please delete the medication alert for {medication} at {time}",
+            "please remove the medication alert for {medication} at {time}",
+            "please take out the medication alert for {medication} at {time}",
+            "please delete the medication alert for {weekday} {medication}",
+            "please remove the medication alert for {weekday} {medication}",
+            "please take out the medication alert for {weekday} {medication}",
+            "please delete the medication alert for {medication} {weekday}",
+            "please remove the medication alert for {medication} {weekday}",
+            "please take out the medication alert for {medication} {weekday}",
+            "please delete the medication alert for {medication} on {weekday}",
+            "please remove the medication alert for {medication} on {weekday}",
+            "please take out the medication alert for {medication} on {weekday}",
+            "please delete the medication alert for {medication} on {weekday} at {time}",
+            "please remove the medication alert for {medication} on {weekday} at {time}",
+            "please take out the medication alert for {medication} on {weekday} at {time}",
+            "please delete the medication alert for {medication} {weekday} at {time}",
+            "please remove the medication alert for {medication} {weekday} at {time}",
+            "please take out the medication alert for {medication} {weekday} at {time}",
+            "please delete the medication alert for {medication} at {time} {weekday}",
+            "please remove the medication alert for {medication} at {time} {weekday}",
+            "please take out the medication alert for {medication} at {time} {weekday}",
+            "please delete the medication alert for {medication} at {time} on {weekday}",
+            "please remove the medication alert for {medication} at {time} on {weekday}",
+            "please take out the medication alert for {medication} at {time} on {weekday}",
+            "please delete the medication alert for {medication}",
+            "please remove the medication alert for {medication}",
+            "please take out the medication alert for {medication}",
+            "please delete the reminder for {time} {medication}",
+            "please remove the reminder for {time} {medication}",
+            "please take out the reminder for {time} {medication}",
+            "please delete the reminder for {medication} at {time}",
+            "please remove the reminder for {medication} at {time}",
+            "please take out the reminder for {medication} at {time}",
+            "please delete the reminder for {weekday} {medication}",
+            "please remove the reminder for {weekday} {medication}",
+            "please take out the reminder for {weekday} {medication}",
+            "please delete the reminder for {medication} {weekday}",
+            "please remove the reminder for {medication} {weekday}",
+            "please take out the reminder for {medication} {weekday}",
+            "please delete the reminder for {medication} on {weekday}",
+            "please remove the reminder for {medication} on {weekday}",
+            "please take out the reminder for {medication} on {weekday}",
+            "please delete the reminder for {medication} on {weekday} at {time}",
+            "please remove the reminder for {medication} on {weekday} at {time}",
+            "please take out the reminder for {medication} on {weekday} at {time}",
+            "please delete the reminder for {medication} {weekday} at {time}",
+            "please remove the reminder for {medication} {weekday} at {time}",
+            "please take out the reminder for {medication} {weekday} at {time}",
+            "please delete the reminder for {medication} at {time} {weekday}",
+            "please remove the reminder for {medication} at {time} {weekday}",
+            "please take out the reminder for {medication} at {time} {weekday}",
+            "please delete the reminder for {medication} at {time} on {weekday}",
+            "please remove the reminder for {medication} at {time} on {weekday}",
+            "please take out the reminder for {medication} at {time} on {weekday}",
+            "please delete the reminder for {medication}",
+            "please remove the reminder for {medication}",
+            "please take out the reminder for {medication}",
+            "please delete the medication alert for {medication} on {weekday} at {time}",
+            "please delete the reminder for {medication} on {weekday} at {time}",
+            "please delete my {weekday} alarm on for {medication}",
+            "please remove my  {weekday} alarm on for {medication}",
+            "please take out my {weekday} alarm on for {medication}",
+            "please delete my alarm on {weekday} for {medication}",
+            "please remove my alarm on {weekday} for {medication}",
+            "please take out my alarm on {weekday} for {medication}",
+            "please delete my alarm at {time} for {medication}",
+            "please remove my alarm at {time} for {medication}",
+            "please take out my alarm at {time} for {medication}",
+            "please delete my {time} {medication} notification",
+            "please remove my {time} {medication} notification",
+            "please take out my {time} {medication} notification",
+            "please delete my {time} {medication} alert",
+            "please remove my {time} {medication} alert",
+            "please take out my {time} {medication} alert",
+            "please delete my {time} {medication} alarm",
+            "please remove my {time} {medication} alarm",
+            "please take out my {time} {medication} alarm",
+            "please delete {time} {medication}",
+            "please remove {time} {medication}",
+            "please take out {time} {medication}",
+            "please delete {medication} at {time}",
+            "please remove {medication} at {time}",
+            "please take out {medication} at {time}",
+            "please delete {weekday} {medication}",
+            "please remove {weekday} {medication}",
+            "please take out {weekday} {medication}",
+            "please delete {medication} {weekday}",
+            "please remove {medication} {weekday}",
+            "please take out {medication} {weekday}",
+            "please delete {medication} on {weekday}",
+            "please remove {medication} on {weekday}",
+            "please take out {medication} on {weekday}",
+            "please delete {medication} on {weekday} at {time}",
+            "please remove {medication} on {weekday} at {time}",
+            "please take out {medication} on {weekday} at {time}",
+            "please delete {medication} {weekday} at {time}",
+            "please remove {medication} {weekday} at {time}",
+            "please take out {medication} {weekday} at {time}",
+            "please delete {medication} at {time} {weekday}",
+            "please remove {medication} at {time} {weekday}",
+            "please take out {medication} at {time} {weekday}",
+            "please delete {medication} at {time} on {weekday}",
+            "please remove {medication} at {time} on {weekday}",
+            "please take out {medication} at {time} on {weekday}",
+            "please delete {medication}",
+            "please remove {medication}",
+            "please take out {medication}",
+            "delete my {weekday} {medication} notification",
+            "remove my {weekday} {medication} notification",
+            "take out my {weekday} {medication} notification",
+            "delete my {weekday} {medication} alert",
+            "remove my {weekday} {medication} alert",
+            "take out my {weekday} {medication} alert",
+            "delete my {weekday} {medication} alarm",
+            "remove my {weekday} {medication} alarm",
+            "take out my {weekday} {medication} alarm",
+            "delete my {weekday} {time} {medication} notification",
+            "remove my {weekday} {time} {medication} notification",
+            "take out my {weekday} {time} {medication} notification",
+            "delete my {weekday} {time} {medication} alert",
+            "remove my {weekday} {time} {medication} alert",
+            "take out my {weekday} {time} {medication} alert",
+            "delete my {weekday} {time} {medication} alarm",
+            "remove my {weekday} {time} {medication} alarm",
+            "take out my {weekday} {time} {medication} alarm",
+            "delete my notification for {medication} on {weekday}",
+            "remove my notification for {medication} on {weekday}",
+            "take out my notification for {medication} on {weekday}",
+            "delete my alert for {medication} on {weekday}",
+            "remove my alert for {medication} on {weekday}",
+            "take out my alert for {medication} on {weekday}",
+            "delete my alarm for {medication} on {weekday}",
+            "remove my alarm for {medication} on {weekday}",
+            "take out my alarm for {medication} on {weekday}",
+            "delete my notification for {medication} on {weekday} at {time}",
+            "remove my notification for {medication} on {weekday} at {time}",
+            "take out my notification for {medication} on {weekday} at {time}",
+            "delete my alert for {medication} on {weekday} at {time}",
+            "remove my alert for {medication} on {weekday} at {time}",
+            "take out my alert for {medication} on {weekday} at {time}",
+            "delete my alarm for {medication} on {weekday} at {time}",
+            "remove my alarm for {medication} on {weekday} at {time}",
+            "take out my alarm for {medication} on {weekday} at {time}",
+            "delete the medication alert for {time} {medication}",
+            "remove the medication alert for {time} {medication}",
+            "take out the medication alert for {time} {medication}",
+            "delete the medication alert for {medication} at {time}",
+            "remove the medication alert for {medication} at {time}",
+            "take out the medication alert for {medication} at {time}",
+            "delete the medication alert for {weekday} {medication}",
+            "remove the medication alert for {weekday} {medication}",
+            "take out the medication alert for {weekday} {medication}",
+            "delete the medication alert for {medication} {weekday}",
+            "remove the medication alert for {medication} {weekday}",
+            "take out the medication alert for {medication} {weekday}",
+            "delete the medication alert for {medication} on {weekday}",
+            "remove the medication alert for {medication} on {weekday}",
+            "take out the medication alert for {medication} on {weekday}",
+            "delete the medication alert for {medication} on {weekday} at {time}",
+            "remove the medication alert for {medication} on {weekday} at {time}",
+            "take out the medication alert for {medication} on {weekday} at {time}",
+            "delete the medication alert for {medication} {weekday} at {time}",
+            "remove the medication alert for {medication} {weekday} at {time}",
+            "take out the medication alert for {medication} {weekday} at {time}",
+            "delete the medication alert for {medication} at {time} {weekday}",
+            "remove the medication alert for {medication} at {time} {weekday}",
+            "take out the medication alert for {medication} at {time} {weekday}",
+            "delete the medication alert for {medication} at {time} on {weekday}",
+            "remove the medication alert for {medication} at {time} on {weekday}",
+            "take out the medication alert for {medication} at {time} on {weekday}",
+            "delete the medication alert for {medication}",
+            "remove the medication alert for {medication}",
+            "take out the medication alert for {medication}",
+            "delete the reminder for {time} {medication}",
+            "remove the reminder for {time} {medication}",
+            "take out the reminder for {time} {medication}",
+            "delete the reminder for {medication} at {time}",
+            "remove the reminder for {medication} at {time}",
+            "take out the reminder for {medication} at {time}",
+            "delete the reminder for {weekday} {medication}",
+            "remove the reminder for {weekday} {medication}",
+            "take out the reminder for {weekday} {medication}",
+            "delete the reminder for {medication} {weekday}",
+            "remove the reminder for {medication} {weekday}",
+            "take out the reminder for {medication} {weekday}",
+            "delete the reminder for {medication} on {weekday}",
+            "remove the reminder for {medication} on {weekday}",
+            "take out the reminder for {medication} on {weekday}",
+            "delete the reminder for {medication} on {weekday} at {time}",
+            "remove the reminder for {medication} on {weekday} at {time}",
+            "take out the reminder for {medication} on {weekday} at {time}",
+            "delete the reminder for {medication} {weekday} at {time}",
+            "remove the reminder for {medication} {weekday} at {time}",
+            "take out the reminder for {medication} {weekday} at {time}",
+            "delete the reminder for {medication} at {time} {weekday}",
+            "remove the reminder for {medication} at {time} {weekday}",
+            "take out the reminder for {medication} at {time} {weekday}",
+            "delete the reminder for {medication} at {time} on {weekday}",
+            "remove the reminder for {medication} at {time} on {weekday}",
+            "take out the reminder for {medication} at {time} on {weekday}",
+            "delete the reminder for {medication}",
+            "remove the reminder for {medication}",
+            "take out the reminder for {medication}",
+            "delete the medication alert for {medication} on {weekday} at {time}",
+            "delete the reminder for {medication} on {weekday} at {time}",
             "delete my {weekday} alarm on for {medication}",
             "remove my  {weekday} alarm on for {medication}",
             "take out my {weekday} alarm on for {medication}",
@@ -130,7 +430,10 @@
           "slots": [
             {
               "name": "medication",
-              "type": "Medication"
+              "type": "Medication",
+              "samples": [
+                "{medication}"
+              ]
             },
             {
               "name": "time",
@@ -150,6 +453,280 @@
             }
           ],
           "samples": [
+            "please change the medication alert for {medication} from {oldTime} on {oldWeekday} to {time} on {weekday}",
+            "please edit the medication alert for {medication} from {oldTime} on {oldWeekday} to {time} on {weekday}",
+            "please update the medication alert for {medication} from {oldTime} on {oldWeekday} to {time} on {weekday}",
+            "please change the medication alert for {medication} from {oldWeekday} to {time} on {weekday}",
+            "please edit the medication alert for {medication} from {oldWeekday} to {time} on {weekday}",
+            "please update the medication alert for {medication} from {oldWeekday} to {time} on {weekday}",
+            "please change the medication alert for {medication} from {oldWeekday} to {weekday}",
+            "please edit the medication alert for {medication} from {oldWeekday} to {weekday}",
+            "please update the medication alert for {medication} from {oldWeekday} to {weekday}",
+            "please change the medication alert for {medication} from {oldWeekday} weekday to {weekday}",
+            "please edit the medication alert for {medication} from {oldWeekday} weekday to {weekday}",
+            "please update the medication alert for {medication} from {oldWeekday} weekday to {weekday}",
+            "please change the medication alert for {medication} from {oldWeekday} day to {weekday}",
+            "please edit the medication alert for {medication} from {oldWeekday} day to {weekday}",
+            "please update the medication alert for {medication} from {oldWeekday} day to {weekday}",
+            "please change the medication alert for {medication} from {oldTime} time to {time}",
+            "please edit the medication alert for {medication} from {oldTime} time to {time}",
+            "please update the medication alert for {medication} from {oldTime} time to {time}",
+            "please change the medication alert for {medication} from {oldTime} to {time}",
+            "please edit the medication alert for {medication} from {oldTime} to {time}",
+            "please update the medication alert for {medication} from {oldTime} to {time}",
+            "please change the medication alert for {medication} from {oldTime} to {time} on {weekday}",
+            "please edit the medication alert for {medication} from {oldTime} to {time} on {weekday}",
+            "please update the medication alert for {medication} from {oldTime} to {time} on {weekday}",
+            "please change the medication alert for {medication} to {weekday}",
+            "please edit the medication alert for {medication} to {weekday}",
+            "please update the medication alert for {medication} to {weekday}",
+            "please change the medication alert for {medication} weekday to {weekday}",
+            "please edit the medication alert for {medication} weekday to {weekday}",
+            "please update the medication alert for {medication} weekday to {weekday}",
+            "please change the medication alert for {medication} day to {weekday}",
+            "please edit the medication alert for {medication} day to {weekday}",
+            "please update the medication alert for {medication} day to {weekday}",
+            "please change the medication alert for {medication} time to {time}",
+            "please edit the medication alert for {medication} time to {time}",
+            "please update the medication alert for {medication} time to {time}",
+            "please change the medication alert for {medication} to {time}",
+            "please edit the medication alert for {medication} to {time}",
+            "please update the medication alert for {medication} to {time}",
+            "please change the medication alert for {medication} to {time} on {weekday}",
+            "please edit the medication alert for {medication} to {time} on {weekday}",
+            "please update the medication alert for {medication} to {time} on {weekday}",
+            "please change the medication alert for {medication} on {oldWeekday} to {time} on {weekday}",
+            "please edit the medication alert for {medication} on {oldWeekday} to {time} on {weekday}",
+            "please update the medication alert for {medication} on {oldWeekday} to {time} on {weekday}",
+            "please change the medication alert for {medication} on {oldWeekday} to {weekday}",
+            "please edit the medication alert for {medication} on {oldWeekday} to {weekday}",
+            "please update the medication alert for {medication} on {oldWeekday} to {weekday}",
+            "please change the medication alert for {medication} on {oldWeekday} weekday to {weekday}",
+            "please edit the medication alert for {medication} on {oldWeekday} weekday to {weekday}",
+            "please update the medication alert for {medication} on {oldWeekday} weekday to {weekday}",
+            "please change the medication alert for {medication} on {oldWeekday} day to {weekday}",
+            "please edit the medication alert for {medication} on {oldWeekday} day to {weekday}",
+            "please update the medication alert for {medication} on {oldWeekday} day to {weekday}",
+            "please change the reminder for {medication} from {oldTime} on {oldWeekday} to {time} on {weekday}",
+            "please edit the reminder for {medication} from {oldTime} on {oldWeekday} to {time} on {weekday}",
+            "please update the reminder for {medication} from {oldTime} on {oldWeekday} to {time} on {weekday}",
+            "please change the reminder for {medication} from {oldWeekday} to {time} on {weekday}",
+            "please edit the reminder for {medication} from {oldWeekday} to {time} on {weekday}",
+            "please update the reminder for {medication} from {oldWeekday} to {time} on {weekday}",
+            "please change the reminder for {medication} from {oldWeekday} to {weekday}",
+            "please edit the reminder for {medication} from {oldWeekday} to {weekday}",
+            "please update the reminder for {medication} from {oldWeekday} to {weekday}",
+            "please change the reminder for {medication} from {oldWeekday} weekday to {weekday}",
+            "please edit the reminder for {medication} from {oldWeekday} weekday to {weekday}",
+            "please update the reminder for {medication} from {oldWeekday} weekday to {weekday}",
+            "please change the reminder for {medication} from {oldWeekday} day to {weekday}",
+            "please edit the reminder for {medication} from {oldWeekday} day to {weekday}",
+            "please update the reminder for {medication} from {oldWeekday} day to {weekday}",
+            "please change the reminder for {medication} from {oldTime} time to {time}",
+            "please edit the reminder for {medication} from {oldTime} time to {time}",
+            "please update the reminder for {medication} from {oldTime} time to {time}",
+            "please change the reminder for {medication} from {oldTime} to {time}",
+            "please edit the reminder for {medication} from {oldTime} to {time}",
+            "please update the reminder for {medication} from {oldTime} to {time}",
+            "please change the reminder for {medication} from {oldTime} to {time} on {weekday}",
+            "please edit the reminder for {medication} from {oldTime} to {time} on {weekday}",
+            "please update the reminder for {medication} from {oldTime} to {time} on {weekday}",
+            "please change the reminder for {medication} to {weekday}",
+            "please edit the reminder for {medication} to {weekday}",
+            "please update the reminder for {medication} to {weekday}",
+            "please change the reminder for {medication} weekday to {weekday}",
+            "please edit the reminder for {medication} weekday to {weekday}",
+            "please update the reminder for {medication} weekday to {weekday}",
+            "please change the reminder for {medication} day to {weekday}",
+            "please edit the reminder for {medication} day to {weekday}",
+            "please update the reminder for {medication} day to {weekday}",
+            "please change the reminder for {medication} time to {time}",
+            "please edit the reminder for {medication} time to {time}",
+            "please update the reminder for {medication} time to {time}",
+            "please change the reminder for {medication} to {time}",
+            "please edit the reminder for {medication} to {time}",
+            "please update the reminder for {medication} to {time}",
+            "please change the reminder for {medication} to {time} on {weekday}",
+            "please edit the reminder for {medication} to {time} on {weekday}",
+            "please update the reminder for {medication} to {time} on {weekday}",
+            "please change the reminder for {medication} on {oldWeekday} to {time} on {weekday}",
+            "please edit the reminder for {medication} on {oldWeekday} to {time} on {weekday}",
+            "please update the reminder for {medication} on {oldWeekday} to {time} on {weekday}",
+            "please change the reminder for {medication} on {oldWeekday} to {weekday}",
+            "please edit the reminder for {medication} on {oldWeekday} to {weekday}",
+            "please update the reminder for {medication} on {oldWeekday} to {weekday}",
+            "please change the reminder for {medication} on {oldWeekday} weekday to {weekday}",
+            "please edit the reminder for {medication} on {oldWeekday} weekday to {weekday}",
+            "please update the reminder for {medication} on {oldWeekday} weekday to {weekday}",
+            "please change the reminder for {medication} on {oldWeekday} day to {weekday}",
+            "please edit the reminder for {medication} on {oldWeekday} day to {weekday}",
+            "please update the reminder for {medication} on {oldWeekday} day to {weekday}",
+            "please update the medication alert for {medication} on {oldWeekday} at {oldTime} to {weekday} at {time}",
+            "please update the reminder for {medication} on {oldWeekday} at {oldTime} to {weekday} at {time}",
+            "please change {medication} from {oldTime} on {oldWeekday} to {time} on {weekday}",
+            "please edit {medication} from {oldTime} on {oldWeekday} to {time} on {weekday}",
+            "please update {medication} from {oldTime} on {oldWeekday} to {time} on {weekday}",
+            "please change {medication} from {oldWeekday} to {time} on {weekday}",
+            "please edit {medication} from {oldWeekday} to {time} on {weekday}",
+            "please update {medication} from {oldWeekday} to {time} on {weekday}",
+            "please change {medication} from {oldWeekday} to {weekday}",
+            "please edit {medication} from {oldWeekday} to {weekday}",
+            "please update {medication} from {oldWeekday} to {weekday}",
+            "please change {medication} from {oldWeekday} weekday to {weekday}",
+            "please edit {medication} from {oldWeekday} weekday to {weekday}",
+            "please update {medication} from {oldWeekday} weekday to {weekday}",
+            "please change {medication} from {oldWeekday} day to {weekday}",
+            "please edit {medication} from {oldWeekday} day to {weekday}",
+            "please update {medication} from {oldWeekday} day to {weekday}",
+            "please change {medication} from {oldTime} time to {time}",
+            "please edit {medication} from {oldTime} time to {time}",
+            "please update {medication} from {oldTime} time to {time}",
+            "please change {medication} from {oldTime} to {time}",
+            "please edit {medication} from {oldTime} to {time}",
+            "please update {medication} from {oldTime} to {time}",
+            "please change {medication} from {oldTime} to {time} on {weekday}",
+            "please edit {medication} from {oldTime} to {time} on {weekday}",
+            "please update {medication} from {oldTime} to {time} on {weekday}",
+            "please change {medication} to {weekday}",
+            "please edit {medication} to {weekday}",
+            "please update {medication} to {weekday}",
+            "please change {medication} weekday to {weekday}",
+            "please edit {medication} weekday to {weekday}",
+            "please update {medication} weekday to {weekday}",
+            "please change {medication} day to {weekday}",
+            "please edit {medication} day to {weekday}",
+            "please update {medication} day to {weekday}",
+            "please change {medication} time to {time}",
+            "please edit {medication} time to {time}",
+            "please update {medication} time to {time}",
+            "please change {medication} to {time}",
+            "please edit {medication} to {time}",
+            "please update {medication} to {time}",
+            "please change {medication} to {time} on {weekday}",
+            "please edit {medication} to {time} on {weekday}",
+            "please update {medication} to {time} on {weekday}",
+            "please change {medication} on {oldWeekday} to {time} on {weekday}",
+            "please edit {medication} on {oldWeekday} to {time} on {weekday}",
+            "please update {medication} on {oldWeekday} to {time} on {weekday}",
+            "please change {medication} on {oldWeekday} to {weekday}",
+            "please edit {medication} on {oldWeekday} to {weekday}",
+            "please update {medication} on {oldWeekday} to {weekday}",
+            "please change {medication} on {oldWeekday} weekday to {weekday}",
+            "please edit {medication} on {oldWeekday} weekday to {weekday}",
+            "please update {medication} on {oldWeekday} weekday to {weekday}",
+            "please change {medication} on {oldWeekday} day to {weekday}",
+            "please edit {medication} on {oldWeekday} day to {weekday}",
+            "please update {medication} on {oldWeekday} day to {weekday}",
+            "change the medication alert for {medication} from {oldTime} on {oldWeekday} to {time} on {weekday}",
+            "edit the medication alert for {medication} from {oldTime} on {oldWeekday} to {time} on {weekday}",
+            "update the medication alert for {medication} from {oldTime} on {oldWeekday} to {time} on {weekday}",
+            "change the medication alert for {medication} from {oldWeekday} to {time} on {weekday}",
+            "edit the medication alert for {medication} from {oldWeekday} to {time} on {weekday}",
+            "update the medication alert for {medication} from {oldWeekday} to {time} on {weekday}",
+            "change the medication alert for {medication} from {oldWeekday} to {weekday}",
+            "edit the medication alert for {medication} from {oldWeekday} to {weekday}",
+            "update the medication alert for {medication} from {oldWeekday} to {weekday}",
+            "change the medication alert for {medication} from {oldWeekday} weekday to {weekday}",
+            "edit the medication alert for {medication} from {oldWeekday} weekday to {weekday}",
+            "update the medication alert for {medication} from {oldWeekday} weekday to {weekday}",
+            "change the medication alert for {medication} from {oldWeekday} day to {weekday}",
+            "edit the medication alert for {medication} from {oldWeekday} day to {weekday}",
+            "update the medication alert for {medication} from {oldWeekday} day to {weekday}",
+            "change the medication alert for {medication} from {oldTime} time to {time}",
+            "edit the medication alert for {medication} from {oldTime} time to {time}",
+            "update the medication alert for {medication} from {oldTime} time to {time}",
+            "change the medication alert for {medication} from {oldTime} to {time}",
+            "edit the medication alert for {medication} from {oldTime} to {time}",
+            "update the medication alert for {medication} from {oldTime} to {time}",
+            "change the medication alert for {medication} from {oldTime} to {time} on {weekday}",
+            "edit the medication alert for {medication} from {oldTime} to {time} on {weekday}",
+            "update the medication alert for {medication} from {oldTime} to {time} on {weekday}",
+            "change the medication alert for {medication} to {weekday}",
+            "edit the medication alert for {medication} to {weekday}",
+            "update the medication alert for {medication} to {weekday}",
+            "change the medication alert for {medication} weekday to {weekday}",
+            "edit the medication alert for {medication} weekday to {weekday}",
+            "update the medication alert for {medication} weekday to {weekday}",
+            "change the medication alert for {medication} day to {weekday}",
+            "edit the medication alert for {medication} day to {weekday}",
+            "update the medication alert for {medication} day to {weekday}",
+            "change the medication alert for {medication} time to {time}",
+            "edit the medication alert for {medication} time to {time}",
+            "update the medication alert for {medication} time to {time}",
+            "change the medication alert for {medication} to {time}",
+            "edit the medication alert for {medication} to {time}",
+            "update the medication alert for {medication} to {time}",
+            "change the medication alert for {medication} to {time} on {weekday}",
+            "edit the medication alert for {medication} to {time} on {weekday}",
+            "update the medication alert for {medication} to {time} on {weekday}",
+            "change the medication alert for {medication} on {oldWeekday} to {time} on {weekday}",
+            "edit the medication alert for {medication} on {oldWeekday} to {time} on {weekday}",
+            "update the medication alert for {medication} on {oldWeekday} to {time} on {weekday}",
+            "change the medication alert for {medication} on {oldWeekday} to {weekday}",
+            "edit the medication alert for {medication} on {oldWeekday} to {weekday}",
+            "update the medication alert for {medication} on {oldWeekday} to {weekday}",
+            "change the medication alert for {medication} on {oldWeekday} weekday to {weekday}",
+            "edit the medication alert for {medication} on {oldWeekday} weekday to {weekday}",
+            "update the medication alert for {medication} on {oldWeekday} weekday to {weekday}",
+            "change the medication alert for {medication} on {oldWeekday} day to {weekday}",
+            "edit the medication alert for {medication} on {oldWeekday} day to {weekday}",
+            "update the medication alert for {medication} on {oldWeekday} day to {weekday}",
+            "change the reminder for {medication} from {oldTime} on {oldWeekday} to {time} on {weekday}",
+            "edit the reminder for {medication} from {oldTime} on {oldWeekday} to {time} on {weekday}",
+            "update the reminder for {medication} from {oldTime} on {oldWeekday} to {time} on {weekday}",
+            "change the reminder for {medication} from {oldWeekday} to {time} on {weekday}",
+            "edit the reminder for {medication} from {oldWeekday} to {time} on {weekday}",
+            "update the reminder for {medication} from {oldWeekday} to {time} on {weekday}",
+            "change the reminder for {medication} from {oldWeekday} to {weekday}",
+            "edit the reminder for {medication} from {oldWeekday} to {weekday}",
+            "update the reminder for {medication} from {oldWeekday} to {weekday}",
+            "change the reminder for {medication} from {oldWeekday} weekday to {weekday}",
+            "edit the reminder for {medication} from {oldWeekday} weekday to {weekday}",
+            "update the reminder for {medication} from {oldWeekday} weekday to {weekday}",
+            "change the reminder for {medication} from {oldWeekday} day to {weekday}",
+            "edit the reminder for {medication} from {oldWeekday} day to {weekday}",
+            "update the reminder for {medication} from {oldWeekday} day to {weekday}",
+            "change the reminder for {medication} from {oldTime} time to {time}",
+            "edit the reminder for {medication} from {oldTime} time to {time}",
+            "update the reminder for {medication} from {oldTime} time to {time}",
+            "change the reminder for {medication} from {oldTime} to {time}",
+            "edit the reminder for {medication} from {oldTime} to {time}",
+            "update the reminder for {medication} from {oldTime} to {time}",
+            "change the reminder for {medication} from {oldTime} to {time} on {weekday}",
+            "edit the reminder for {medication} from {oldTime} to {time} on {weekday}",
+            "update the reminder for {medication} from {oldTime} to {time} on {weekday}",
+            "change the reminder for {medication} to {weekday}",
+            "edit the reminder for {medication} to {weekday}",
+            "update the reminder for {medication} to {weekday}",
+            "change the reminder for {medication} weekday to {weekday}",
+            "edit the reminder for {medication} weekday to {weekday}",
+            "update the reminder for {medication} weekday to {weekday}",
+            "change the reminder for {medication} day to {weekday}",
+            "edit the reminder for {medication} day to {weekday}",
+            "update the reminder for {medication} day to {weekday}",
+            "change the reminder for {medication} time to {time}",
+            "edit the reminder for {medication} time to {time}",
+            "update the reminder for {medication} time to {time}",
+            "change the reminder for {medication} to {time}",
+            "edit the reminder for {medication} to {time}",
+            "update the reminder for {medication} to {time}",
+            "change the reminder for {medication} to {time} on {weekday}",
+            "edit the reminder for {medication} to {time} on {weekday}",
+            "update the reminder for {medication} to {time} on {weekday}",
+            "change the reminder for {medication} on {oldWeekday} to {time} on {weekday}",
+            "edit the reminder for {medication} on {oldWeekday} to {time} on {weekday}",
+            "update the reminder for {medication} on {oldWeekday} to {time} on {weekday}",
+            "change the reminder for {medication} on {oldWeekday} to {weekday}",
+            "edit the reminder for {medication} on {oldWeekday} to {weekday}",
+            "update the reminder for {medication} on {oldWeekday} to {weekday}",
+            "change the reminder for {medication} on {oldWeekday} weekday to {weekday}",
+            "edit the reminder for {medication} on {oldWeekday} weekday to {weekday}",
+            "update the reminder for {medication} on {oldWeekday} weekday to {weekday}",
+            "change the reminder for {medication} on {oldWeekday} day to {weekday}",
+            "edit the reminder for {medication} on {oldWeekday} day to {weekday}",
+            "update the reminder for {medication} on {oldWeekday} day to {weekday}",
+            "update the medication alert for {medication} on {oldWeekday} at {oldTime} to {weekday} at {time}",
+            "update the reminder for {medication} on {oldWeekday} at {oldTime} to {weekday} at {time}",
             "change {medication} from {oldTime} on {oldWeekday} to {time} on {weekday}",
             "edit {medication} from {oldTime} on {oldWeekday} to {time} on {weekday}",
             "update {medication} from {oldTime} on {oldWeekday} to {time} on {weekday}",
@@ -191,7 +768,208 @@
             "update {medication} to {time}",
             "change {medication} to {time} on {weekday}",
             "edit {medication} to {time} on {weekday}",
-            "update {medication} to {time} on {weekday}"
+            "update {medication} to {time} on {weekday}",
+            "change {medication} on {oldWeekday} to {time} on {weekday}",
+            "edit {medication} on {oldWeekday} to {time} on {weekday}",
+            "update {medication} on {oldWeekday} to {time} on {weekday}",
+            "change {medication} on {oldWeekday} to {weekday}",
+            "edit {medication} on {oldWeekday} to {weekday}",
+            "update {medication} on {oldWeekday} to {weekday}",
+            "change {medication} on {oldWeekday} weekday to {weekday}",
+            "edit {medication} on {oldWeekday} weekday to {weekday}",
+            "update {medication} on {oldWeekday} weekday to {weekday}",
+            "change {medication} on {oldWeekday} day to {weekday}",
+            "edit {medication} on {oldWeekday} day to {weekday}",
+            "update {medication} on {oldWeekday} day to {weekday}"
+          ]
+        },
+        {
+          "name": "HaveTakenMedsIntent",
+          "slots": [
+            {
+              "name": "medication",
+              "type": "Medication",
+              "samples": [
+                "{medication}"
+              ]
+            },
+            {
+              "name": "time",
+              "type": "AMAZON.TIME"
+            }
+          ],
+          "samples": [
+            "I have taken my {medication} at {time}",
+            "I took my {medication} at {time}",
+            "I have taken my {medication} at {time} today",
+            "I took my {medication} at {time} today",
+            "I have taken {medication} at {time} today",
+            "I took {medication} at {time} today",
+            "I have taken {medication} at {time}",
+            "I took {medication} at {time}",
+            "I took my medication at {time}",
+            "I took my medication at {time} today",
+            "medication at {time} has been taken",
+            "I have taken my medication at {time}",
+            "I have taken my medication at {time} today",
+            "{medication} at {time} has been taken",
+            "I have taken my {medication}",
+            "I took my {medication}",
+            "I have taken my {medication} today",
+            "I took my {medication} today",
+            "I have taken {medication} today",
+            "I took {medication} today",
+            "I have taken {medication}",
+            "I took {medication}",
+            "I took my medication",
+            "I took my medication today",
+            "medication has been taken",
+            "I have taken my medication",
+            "I have taken my medication today",
+            "{medication} has been taken"
+          ]
+        },
+        {
+          "name": "RepeatMedicationIntent",
+          "slots": [],
+          "samples": [
+            "list",
+            "list medication",
+            "list medications",
+            "What reminders do I have",
+            "What are my reminders",
+            "What are my alarms",
+            "What are my medications",
+            "Repeat my medication",
+            "Repeat my medications",
+            "Repeat reminders",
+            "Repeat alarms",
+            "Repeat medications",
+            "Can you repeat my medications",
+            "What alarms do I have",
+            "What medications do I need to take"
+          ]
+        },
+        {
+          "name": "TakenMedicationIntent",
+          "slots": [
+            {
+              "name": "medication",
+              "type": "Medication"
+            },
+            {
+              "name": "time",
+              "type": "AMAZON.TIME"
+            }
+          ],
+          "samples": [
+            "have I taken {medication} at {time}",
+            "have I taken my {medication} at {time}",
+            "did I take my {medication} at {time}",
+            "did I take {medication} at {time}",
+            "have I taken {medication}",
+            "have I taken my {medication}",
+            "did I take my {medication}",
+            "did I take {medication}"
+          ]
+        },
+        {
+          "name": "ConfigChangeIntent",
+          "slots": [
+            {
+              "name": "numReminders",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{numReminders} times please",
+                "{numReminders} alerts please",
+                "{numReminders} alarms please",
+                "{numReminders} reminders please",
+                "{numReminders} times",
+                "{numReminders} alerts",
+                "{numReminders} alarms",
+                "{numReminders} reminders",
+                "{numReminders} please",
+                "{numReminders}"
+              ]
+            },
+            {
+              "name": "minsBetweenReminders",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{minsBetweenReminders} minutes please",
+                "{minsBetweenReminders} minutes",
+                "{minsBetweenReminders}"
+              ]
+            },
+            {
+              "name": "phoneNumber",
+              "type": "AMAZON.PhoneNumber",
+              "samples": [
+                "{phoneNumber} please",
+                "{phoneNumber}"
+              ]
+            }
+          ],
+          "samples": [
+            "edit configuration",
+            "update configuration",
+            "change configuration",
+            "change config",
+            "change settings",
+            "edit settings",
+            "update settings",
+            "update config",
+            "edit config",
+            "config"
+          ]
+        },
+        {
+          "name": "ResetAlertsIntent",
+          "slots": [],
+          "samples": [
+            "reset all of my alarms",
+            "reset all of my alerts",
+            "reset my alarms",
+            "erase my alarms",
+            "erase my alerts",
+            "erase all of my alerts",
+            "erase all of my alarms",
+            "delete all of my alerts",
+            "delete all of my alarms",
+            "reset my alerts",
+            "get rid of all my alerts",
+            "get rid of all my alarms",
+            "delete all",
+            "erase all",
+            "reset"
+          ]
+        },
+        {
+          "name": "ConfigDefaultIntent",
+          "slots": [],
+          "samples": [
+            "reset settings",
+            "default settings",
+            "default configuration",
+            "reset configuration",
+            "reset config",
+            "default config",
+            "default",
+            "change back to defaults",
+            "reset to defaults"
+          ]
+        },
+        {
+          "name": "FurtherHelpIntent",
+          "slots": [
+            {
+              "name": "topic",
+              "type": "Topic"
+            }
+          ],
+          "samples": [
+            "help with {topic}",
+            "assist with {topic}"
           ]
         }
       ],
@@ -110031,6 +110809,101 @@
             }
           ],
           "name": "Weekday"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "delete all",
+                "synonyms": [
+                  "remove all alerts",
+                  "delete all alerts"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "reset config",
+                "synonyms": [
+                  "default",
+                  "default config"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "repeat",
+                "synonyms": [
+                  "list alerts",
+                  "repeat the list",
+                  "list"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "check",
+                "synonyms": [
+                  "checking",
+                  "check if taken"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "config",
+                "synonyms": [
+                  "set",
+                  "settings",
+                  "configure"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "notify",
+                "synonyms": [
+                  "notify caregiver",
+                  "let medication alert know",
+                  "let know",
+                  "notification"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "update",
+                "synonyms": [
+                  "changing",
+                  "change",
+                  "edit",
+                  "editing",
+                  "updating"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "delete",
+                "synonyms": [
+                  "erase",
+                  "erasing",
+                  "remove",
+                  "removing",
+                  "deleting"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "add",
+                "synonyms": [
+                  "adding"
+                ]
+              }
+            }
+          ],
+          "name": "Topic"
         }
       ]
     },
@@ -110048,7 +110921,13 @@
               "confirmationRequired": false,
               "prompts": {
                 "elicitation": "Elicit.Slot.650682664916.6603624699"
-              }
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.1140518787596.286818166257.1061430795940"
+                }
+              ]
             },
             {
               "name": "time",
@@ -110066,7 +110945,13 @@
               "confirmationRequired": false,
               "prompts": {
                 "elicitation": "Elicit.Slot.257314818370.308962301926"
-              }
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.1140518787596.275559142274.1565562882682"
+                }
+              ]
             }
           ]
         },
@@ -110082,9 +110967,151 @@
               "confirmationRequired": false,
               "prompts": {
                 "elicitation": "Elicit.Slot.244569310393.1156303546291"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.86804455288.453217799031.445276649850"
+                }
+              ]
+            },
+            {
+              "name": "weekday",
+              "type": "Weekday",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {},
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.86804455288.1114064662442.1435797188138"
+                }
+              ]
+            },
+            {
+              "name": "time",
+              "type": "AMAZON.TIME",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            }
+          ]
+        },
+        {
+          "name": "UpdateMedicationIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "medication",
+              "type": "Medication",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.446895909335.1124873048586"
+              }
+            },
+            {
+              "name": "time",
+              "type": "AMAZON.TIME",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            },
+            {
+              "name": "weekday",
+              "type": "Weekday",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {},
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.308978437469.1488712633798.256919483443"
+                }
+              ]
+            },
+            {
+              "name": "oldTime",
+              "type": "AMAZON.TIME",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            },
+            {
+              "name": "oldWeekday",
+              "type": "Weekday",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            }
+          ]
+        },
+        {
+          "name": "HaveTakenMedsIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "medication",
+              "type": "Medication",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.926995091477.1171145077997"
               }
             }
           ]
+        },
+        {
+          "name": "ConfigChangeIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "numReminders",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1210681541242.721864128421"
+              }
+            },
+            {
+              "name": "minsBetweenReminders",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1210681541242.128389619335"
+              }
+            },
+            {
+              "name": "phoneNumber",
+              "type": "AMAZON.PhoneNumber",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1210681541242.1162906113078"
+              }
+            }
+          ]
+        },
+        {
+          "name": "ConfigDefaultIntent",
+          "confirmationRequired": true,
+          "prompts": {
+            "confirmation": "Confirm.Intent.1349742995752"
+          },
+          "slots": []
+        },
+        {
+          "name": "ResetAlertsIntent",
+          "confirmationRequired": true,
+          "prompts": {
+            "confirmation": "Confirm.Intent.390742853705"
+          },
+          "slots": []
         }
       ],
       "delegationStrategy": "ALWAYS"
@@ -110123,6 +111150,118 @@
           {
             "type": "PlainText",
             "value": "What medication do you want to delete?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.446895909335.1124873048586",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please tell us a medication?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.926995091477.1171145077997",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What medication?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1210681541242.721864128421",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "How many reminders do you want?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1210681541242.128389619335",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "How many minutes would you like between each reminder, There is a minimum of sixty minutes"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1210681541242.1162906113078",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What phone number do you want to input?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.1349742995752",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Your caregiver will no longer recieve texts until you add a new phone number, are you sure you wish to set the config back to its default state?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.390742853705",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Are you sure you want to delete all your alerts?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Are you sure you want to delete all your alarms?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1140518787596.286818166257.1061430795940",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please say a medication when adding an alert. Do not say the dosage alongside the alert."
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1140518787596.275559142274.1565562882682",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please either give a day of the week or daily."
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.308978437469.1488712633798.256919483443",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please give a day of the week or daily."
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.86804455288.453217799031.445276649850",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please say a medication when deleting an alert."
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.86804455288.1114064662442.1435797188138",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please either give a day of the week or daily."
           }
         ]
       }
